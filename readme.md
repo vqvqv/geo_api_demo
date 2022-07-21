@@ -11,8 +11,16 @@
 
 DOCKER
 
+cd serv
+
 yarn install
+
+cd ..
+
 docker compose up --build -d
+
 docker exec -it dev_serv /bin/bash
+
 cd ./src/utils 
+
 npx ts-node registerDefaultUser.ts 'mongodb://mongo:27017'
