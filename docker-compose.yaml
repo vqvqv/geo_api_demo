@@ -1,7 +1,9 @@
 services:
   app:
     container_name: dev_serv
-    image: "node:16"
+    build:
+      dockerfile: Dockerfile
+      context: ./server
     user: root
     working_dir: /home/node/app
     command: "yarn dev"
