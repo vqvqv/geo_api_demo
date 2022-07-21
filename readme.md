@@ -3,7 +3,7 @@
 1. cd client yarn install
 2. cd server yarn install
 [//]: <> CREATE DB USER
-3. cd ./serc/utils npx ts-node registerDefaultUser.ts 'mongodb://localhost:27017' [//]: <> (Or any db you created)
+3. cd ./src/utils npx ts-node registerDefaultUser.ts 'mongodb://localhost:27017' [//]: <> (Or any db you created)
 4. cd server -> yarn dev
 5. cd client -> yarn start
 
