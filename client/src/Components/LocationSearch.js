@@ -56,13 +56,15 @@ function LocationSearch(props){
             }
         }
         catch(err){
-            switch(err.response.status){
-                case 403:
-                    window.location.reload();
-                    break;
-                default:
-                    alert("Server problems");
-                    break;
+            if(typeof err.response !== 'undefined'){
+                switch(err.response.status){
+                    case 403:
+                        window.location.reload();
+                        break;
+                    default:
+                        alert("Server problems");
+                        break;
+                }
             }
         }
 
@@ -76,13 +78,15 @@ function LocationSearch(props){
             }
         }
         catch(err) {
-            switch(err.response.status){
-                case 403:
-                    window.location.reload();
-                    break;
-                default:
-                    alert("Server problems");
-                    break;
+            if(typeof err.response !== 'undefined'){
+                switch(err.response.status){
+                    case 403:
+                        window.location.reload();
+                        break;
+                    default:
+                        alert("Server problems");
+                        break;
+                }
             }
         }
 
@@ -96,13 +100,15 @@ function LocationSearch(props){
             }
         }
         catch(err) {
-            switch(err.response.status){
-                case 403:
-                    window.location.reload();
-                    break;
-                default:
-                    alert("Server problems");
-                    break;
+            if(typeof err.response !== 'undefined'){
+                switch(err.response.status){
+                    case 403:
+                        window.location.reload();
+                        break;
+                    default:
+                        alert("Server problems");
+                        break;
+                }
             }
         }
     }
@@ -115,13 +121,15 @@ function LocationSearch(props){
             }
         }
         catch(err) {
-            switch(err.response.status){
-                case 403:
-                    window.location.reload();
-                    break;
-                default:
-                    alert("Server problems");
-                    break;
+            if(typeof err.response !== 'undefined'){
+                switch(err.response.status){
+                    case 403:
+                        window.location.reload();
+                        break;
+                    default:
+                        alert("Server problems");
+                        break;
+                }
             }
         }
 
